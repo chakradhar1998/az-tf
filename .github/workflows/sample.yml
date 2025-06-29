@@ -1,0 +1,27 @@
+name: Sample Workflow with Inputs
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to (e.g., dev, staging, prod)'
+        required: true
+        default: 'dev'
+      app_version:
+        description: 'Application version to deploy'
+        required: false
+        default: 'latest'
+      debug_mode:
+        description: 'Enable debug mode?'
+        required: false
+        default: 'false'
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print input parameters
+        run: |
+          echo "Environment: ${{ github.event.inputs.environment }}"
+          echo "App Version: ${{ github.event.inputs.app_version }}"
+          echo "Debug Mode: ${{ github.event.inputs.debug_mode }}"
