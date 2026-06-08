@@ -1,4 +1,4 @@
-
+/*
 resource "azurerm_resource_group" "rg" {
   name     = "myTFResourceGroup"
   location = "westus2"
@@ -9,3 +9,4 @@ resource "azurerm_resource_group" "rg_august" {
   location = "westus2"
 }
 
+*/
