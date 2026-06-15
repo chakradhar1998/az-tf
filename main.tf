@@ -15,7 +15,7 @@ module "PortfolioStgAcc" {
 */
 
 module "myappserviceplan" {
-  source = "./module/app_service_plan"
+  source = "./modules/app_service_plan"
   name = var.app_service_plan_name
   location = module.resource_group.location
   resource_group_name = module.resource_group.name
