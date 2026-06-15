@@ -1,3 +1,9 @@
+module "azurerm_rg" {
+  source = "./module/resource_group"
+  name = "portfolio"
+  location = "westus2"
+}
+
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
