@@ -1,17 +1,14 @@
-variable "resource_group_name" {
-  default = "portfolio"
-}
-
-variable "resource_group_location" {
-  default = "westus2"
-}
-
-
-variable "stgacc_name" {
+variable "name" {
   default = "ChakraStgAcc
 }
 
+variable "location" {
+  default = "westus2"
+}
 
+variable "resource_group_name" {
+   description = "provide resource group name" 
+}
 
 variable "account_tier" {
     default = "Standard"
