@@ -20,3 +20,7 @@ variable "account_tier" {
 variable "account_replication_type" {
     default = "LRS"
 }
+
+variable "app_service_plan_name" {
+  default = "chakraprofile"
+}

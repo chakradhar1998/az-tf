@@ -11,3 +11,7 @@ output "primary_blob_endpoint" {
 	value = module.PortfolioStgAcc.primary_blob_endpoint
 }
 */
+
+output "app_service_plan_id" {
+  value = azurerm_app_service_plan.this.id
+}
