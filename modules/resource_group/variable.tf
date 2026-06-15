@@ -1,7 +1,7 @@
-variable "resource_group_name" {
+variable "name" {
   default = "myTFResourceGroup"
 }
 
-variable "resource_group_location" {
+variable "location" {
   default = "westus2"
 }
