@@ -5,7 +5,7 @@ resource "azurerm_storage_account" "this" {
   account_tier             = var.account_tier
   account_replication_type = var.account_replication_type
   static_website  {
-    
+    index_document = "index.html"
   }
 
   tags = {
