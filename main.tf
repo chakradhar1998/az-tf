@@ -3,7 +3,7 @@ module "resource_group" {
   name = var.resource_group_name
   location = var.resource_group_location
 }
-
+/*
 module "PortfolioStgAcc" {
   source                    = "./modules/storage_account"
   name                      = var.stgacc_name
@@ -12,3 +12,4 @@ module "PortfolioStgAcc" {
   account_tier              = var.account_tier
   account_replication_type  = var.account_replication_type
 }
+*/
