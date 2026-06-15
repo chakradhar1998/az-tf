@@ -20,8 +20,3 @@ variable "account_tier" {
 variable "account_replication_type" {
     default = "LRS"
 }
-
-variable "static_website" {
-    type    = bool
-    default = true
-}
