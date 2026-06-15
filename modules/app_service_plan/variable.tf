@@ -7,5 +7,5 @@ variable "location" {
 }
 
 variable "rgname" {
-    descripton = "specify the rg"
+    description = "specify the rg"
 }
