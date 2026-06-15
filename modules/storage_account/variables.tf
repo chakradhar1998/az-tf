@@ -1,5 +1,5 @@
 variable "name" {
-  default = "ChakraStgAcc"
+  default = "chakrastgacc"
 }
 
 variable "location" {
