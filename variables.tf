@@ -8,7 +8,7 @@ variable "resource_group_location" {
 
 
 variable "stgacc_name" {
-  default = "ChakraStgAcc"
+  default = "chakrastgacc"
 }
 
 
