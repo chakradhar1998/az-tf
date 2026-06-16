@@ -20,3 +20,11 @@ module "myappserviceplan" {
   location = module.resource_group.location
   rgname = module.resource_group.name
 }
+
+module "mywebapp" {
+  source = "./modules/azurerm_linux_webapp"
+  name = var.webapp_name
+  location = module.resource_group.location
+  rgname = module.resource_group.name
+  service_plan_id = module.myappserviceplan.id
+}

@@ -24,3 +24,8 @@ variable "account_replication_type" {
 variable "app_service_plan_name" {
   default = "chakraprofile"
 }
+
+
+variable "webapp_name" {
+  default = "chakraapp"
+}
