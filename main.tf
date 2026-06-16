@@ -26,5 +26,5 @@ module "mywebapp" {
   name = var.webapp_name
   location = module.resource_group.location
   rgname = module.resource_group.name
-  service_plan_id = module.myappserviceplan.id
+  service_plan_id = module.myappserviceplan.service_plan_id
 }
