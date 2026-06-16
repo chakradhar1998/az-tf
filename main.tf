@@ -22,7 +22,7 @@ module "myappserviceplan" {
 }
 
 module "mywebapp" {
-  source = "./modules/azurerm_linux_webapp"
+  source = "./modules/azure_linux_webapp"
   name = var.webapp_name
   location = module.resource_group.location
   rgname = module.resource_group.name
