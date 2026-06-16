@@ -6,6 +6,12 @@ resource "azurerm_linux_web_app" "this" {
 
   site_config {
     always_on = false
+    ip_restriction {
+        name = "allowhomeip"
+        action = "Allow"
+        ip_address = "183.83.229.0/24"
+        priority = 150
+    }
     application_stack {
         node_version = "24-lts"
     }
