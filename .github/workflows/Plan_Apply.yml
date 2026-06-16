@@ -1,7 +1,7 @@
 
 name: 'Terraform Apply'
 
-run-name: PAYG-${{ github.sha }}-${{ github.actor }}
+run-name: PAYG-${{ github.sha }}-${{ github.actor }}-Apply
 
 
 on:

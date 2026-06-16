@@ -6,6 +6,7 @@ resource "azurerm_linux_web_app" "this" {
 
   site_config {
     always_on = false
+    ip_restriction_default_action = "Deny"
     ip_restriction {
         name = "allowhomeip"
         action = "Allow"

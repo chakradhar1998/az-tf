@@ -1,5 +1,7 @@
 name: Terraform Plan
 
+run-name: PAYG-${{ github.actor }}-Plan
+
 on:
   push:
     branches: [main]
@@ -22,7 +24,7 @@ env:
   ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 
 jobs:
-  terraform:
+  plan:
     runs-on: ubuntu-latest
     
     steps:
