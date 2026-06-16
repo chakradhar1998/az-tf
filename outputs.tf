@@ -12,6 +12,6 @@ output "primary_blob_endpoint" {
 }
 */
 
-output "app_service_plan_id" {
-  value = azurerm_app_service_plan.this.id
+output "service_plan_id" {
+  value = module.myappserviceplan.service_plan_id
 }
