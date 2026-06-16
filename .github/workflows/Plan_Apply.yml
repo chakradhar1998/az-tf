@@ -1,5 +1,5 @@
 
-name: 'Terraform'
+name: 'Terraform Apply'
 
 run-name: PAYG-${{ github.sha }}-${{ github.actor }}
 
