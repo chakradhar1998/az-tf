@@ -18,5 +18,5 @@ module "myappserviceplan" {
   source = "./modules/app_service_plan"
   name = var.app_service_plan_name
   location = module.resource_group.location
-  resource_group_name = module.resource_group.name
+  rgname = module.resource_group.name
 }
