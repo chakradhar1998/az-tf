@@ -11,7 +11,8 @@ output "primary_blob_endpoint" {
 	value = module.PortfolioStgAcc.primary_blob_endpoint
 }
 */
-
+/*
 output "service_plan_id" {
   value = module.myappserviceplan.service_plan_id
 }
+*/
