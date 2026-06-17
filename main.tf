@@ -13,7 +13,7 @@ module "PortfolioStgAcc" {
   account_replication_type  = var.account_replication_type
 }
 */
-
+/*
 module "myappserviceplan" {
   source = "./modules/app_service_plan"
   name = var.app_service_plan_name
@@ -28,3 +28,5 @@ module "mywebapp" {
   rgname = module.resource_group.name
   service_plan_id = module.myappserviceplan.service_plan_id
 }
+
+*/
