@@ -14,7 +14,7 @@ module "PortfolioStgAcc" {
   account_replication_type  = var.account_replication_type
 }
 */
-/*
+
 module "myappserviceplan" {
   source = "./modules/app_service_plan"
   name = var.app_service_plan_name
@@ -24,7 +24,7 @@ module "myappserviceplan" {
   os_type = var.os_type
   sku_name = var.sku_name
 }
-
+/*
 module "mywebapp" {
   source = "./modules/azure_linux_webapp"
   name = var.webapp_name
