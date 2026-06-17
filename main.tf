@@ -20,6 +20,9 @@ module "myappserviceplan" {
   name = var.app_service_plan_name
   location = module.resource_group.location
   rgname = module.resource_group.name
+  tags = var.tags
+  os_type = var.os_type
+  sku_name = var.sku_name
 }
 
 module "mywebapp" {

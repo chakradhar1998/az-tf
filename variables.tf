@@ -22,7 +22,7 @@ variable "account_replication_type" {
 }
 
 variable "app_service_plan_name" {
-  default = "chakraprofile"
+  description = "provide app service name"
 }
 
 
@@ -34,4 +34,12 @@ variable tags {
   default = {
     "managedby" : "Terraform"
   }
+}
+
+variable os_type {
+  type = string
+}
+
+variable sku_name {
+  type = string
 }
