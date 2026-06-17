@@ -29,3 +29,9 @@ variable "app_service_plan_name" {
 variable "webapp_name" {
   default = "chakraapp"
 }
+
+variable tags {
+  default = {
+    "managedby" : "Terraform"
+  }
+}
