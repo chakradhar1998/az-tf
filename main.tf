@@ -4,16 +4,6 @@ module "resource_group" {
   location = var.resource_group_location
   tags = var.tags
 }
-/*
-module "PortfolioStgAcc" {
-  source                    = "./modules/storage_account"
-  name                      = var.stgacc_name
-  resource_group_name       = module.resource_group.name
-  location                  = module.resource_group.location
-  account_tier              = var.account_tier
-  account_replication_type  = var.account_replication_type
-}
-*/
 
 module "myappserviceplan" {
   source = "./modules/app_service_plan"
@@ -24,7 +14,7 @@ module "myappserviceplan" {
   os_type = var.os_type
   sku_name = var.sku_name
 }
-
+/*
 module "mywebapp" {
   source = "./modules/azure_linux_webapp"
   webappname = var.webapp_name
@@ -36,3 +26,4 @@ module "mywebapp" {
 
 }
 
+*/
