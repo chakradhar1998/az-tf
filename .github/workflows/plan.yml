@@ -2,6 +2,7 @@ name: Terraform Plan
 
 run-name: PAYG-${{ github.actor }}-Plan
 
+
 on:
   push:
     branches: [main]
@@ -25,6 +26,7 @@ env:
 
 jobs:
   plan:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     
     steps:

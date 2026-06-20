@@ -3,7 +3,7 @@ resource "azurerm_linux_web_app" "this" {
   resource_group_name = var.rgname
   location            = var.location
   service_plan_id     = var.service_plan_id
-
+  tags = var.tags
   site_config {
     always_on = false
     ip_restriction_default_action = "Deny"

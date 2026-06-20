@@ -20,6 +20,7 @@ env:
 
 jobs:
   plan:
+    if: github.ref == 'refs/heads/main's
     name: 'Plan'
 
     runs-on: ubuntu-latest
