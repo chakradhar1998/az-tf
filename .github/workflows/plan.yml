@@ -4,9 +4,9 @@ run-name: PAYG-${{ github.actor }}-Plan
 
 
 on:
-  push:
-    branches: [main]
   pull_request:
+    - branches:
+      - 'feature/*'
   workflow_dispatch: 
 
 permissions:
@@ -26,7 +26,6 @@ env:
 
 jobs:
   plan:
-    if: github.ref == 'refs/heads/feature/*'
     runs-on: ubuntu-latest
     
     steps:
