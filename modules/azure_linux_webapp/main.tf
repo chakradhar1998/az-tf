@@ -1,9 +1,12 @@
 resource "azurerm_linux_web_app" "this" {
-  name                = var.name
+  name                = var.webappname
   resource_group_name = var.rgname
   location            = var.location
   service_plan_id     = var.service_plan_id
   tags = var.tags
+
+  site_config = var.site_config
+  /*
   site_config {
     always_on = false
     ip_restriction_default_action = "Deny"
@@ -16,5 +19,5 @@ resource "azurerm_linux_web_app" "this" {
     application_stack {
         node_version = "24-lts"
     }
-  }
-}
+  }*/
+} 
