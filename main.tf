@@ -4,7 +4,7 @@ module "resource_group" {
   location = var.resource_group_location
   tags = var.tags
 }
-
+/*
 module "myappserviceplan" {
   source = "./modules/app_service_plan"
   name = var.app_service_plan_name
@@ -14,7 +14,7 @@ module "myappserviceplan" {
   os_type = var.os_type
   sku_name = var.sku_name
 }
-/*
+
 module "mywebapp" {
   source = "./modules/azure_linux_webapp"
   webappname = var.webapp_name
