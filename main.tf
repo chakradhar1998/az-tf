@@ -24,7 +24,6 @@ module "myappserviceplan" {
   os_type = var.os_type
   sku_name = var.sku_name
 }
-
 /*
 module "mywebapp" {
   source = "./modules/azure_linux_webapp"
