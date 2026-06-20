@@ -19,7 +19,7 @@ variable "tags" {
 }
 
 variable "webappname" {
-  type = "string"
+  type = string
 }
 variable "site_config" {
     type =object({
