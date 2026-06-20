@@ -5,9 +5,9 @@ run-name: PAYG-${{ github.actor }}-Plan
 
 on:
   pull_request:
-    - branches:
+    branches:
       - 'feature/*'
-  workflow_dispatch: 
+  workflow_dispatch:
 
 permissions:
   contents: read
