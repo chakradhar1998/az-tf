@@ -24,13 +24,15 @@ module "myappserviceplan" {
   os_type = var.os_type
   sku_name = var.sku_name
 }
-/*
+
 module "mywebapp" {
   source = "./modules/azure_linux_webapp"
-  name = var.webapp_name
+  webappname = var.webapp_name
   location = module.resource_group.location
   rgname = module.resource_group.name
   service_plan_id = module.myappserviceplan.service_plan_id
+  tags = var.tags
+  site_config = var.site_config
+
 }
 
-*/
